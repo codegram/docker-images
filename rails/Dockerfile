@@ -18,8 +18,8 @@ RUN wget -q http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1
     dpkg --install wkhtmltox-0.12.2.1_linux-trusty-amd64.deb && \
     apt-get --yes --fix-broken install
 
-# Install ruby 2.3.0
-ENV RUBY_VERSION 2.3.0
+# Install ruby 2.3.1
+ENV RUBY_VERSION 2.3.1
 RUN cd && wget http://ftp.ruby-lang.org/pub/ruby/2.3/ruby-$RUBY_VERSION.tar.gz && \
     tar -xzvf ruby-$RUBY_VERSION.tar.gz && cd ruby-$RUBY_VERSION/ && \
     ./configure && make && make install && rm -rf ruby-$RUBY_VERSION
